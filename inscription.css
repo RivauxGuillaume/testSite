@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.inscription{
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+    flex-direction: column;
+    background-color: #CDCDCD;
+    filter: drop-shadow(0px 40px 50px rgba(0, 0, 0, 0.192));
+    width: 800px;
+    height: 950px;
+    border-radius: 50px;
+}
+
+.inscription h1{
+    margin: 40px 0 0 0;
+    font-size: 32px;
+    font-family: "inter", sans-serif;
+    font-weight: 800;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mail-container{
+    margin: 40px 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pseudo-container{
+    margin: 40px 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pass-container{
+    margin: 40px 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pass2-container{
+    margin: 40px 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user{
+    width: 30px;
+    height: 30px;
+}
+
+.psd{
+    width: 30px;
+    height: 30px;
+}
+
+.lock{
+    width: 30px;
+    height: 30px;
+}
+
+.lock2{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+label{
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+}
+
+#email {
+    padding: 20px 15px;
+    width: 580px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#email::placeholder {
+    color: #777777;
+    font-weight: 400;
+}
+
+#email:focus {
+    outline: none;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.11));
+}
+
+
+#pseudo {
+    padding: 20px 15px;
+    width: 580px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#pseudo::placeholder {
+    color: #777777;
+    font-weight: 400;
+}
+
+#pseudo:focus {
+    outline: none;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.11));
+}
+
+
+.password-container {
+    position: relative;
+    width: 580px;
+    display: flex;
+    align-items: center;
+}
+
+#password {
+    padding: 20px 15px;
+    padding-right: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#password::placeholder {
+    color: #777777;
+    font-weight: 400;
+}
+
+#password:focus {
+    outline: none;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.11));
+}
+
+.password2-container {
+    position: relative;
+    width: 580px;
+    display: flex;
+    align-items: center;
+}
+
+#password2 {
+    padding: 20px 15px;
+    padding-right: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#password2::placeholder {
+    color: #777777;
+    font-weight: 400;
+}
+
+#password2:focus {
+    outline: none;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.11));
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toggle-password.cross {
+    transform: rotate(180deg);
+}
+
+.toggle-password2 {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toggle-password2.cross {
+    transform: rotate(180deg);
+}
+
+
+#connexion-btn{
+    margin: 40px 0;
+    width: 250px;
+    align-self: center;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 0;
+    font-size: 24px;
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#connexion-btn:hover{
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.103));
+}
+
+#connexion-btn:focus{
+    outline: none;
+    background-color: #CDCDCD;
+    color: #fff;
+}
+
+hr{
+    width: 580px;
+    border: 1px solid #8a8a8a;
+    margin: 10px 0;
+}
+
+.connexion{
+    margin: 40px 0;
+    text-decoration: none;
+    color: #555;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.connexion:hover{
+    color: #000;
+}
+
+
+
+
+@media screen and (max-width: 925px) {
+    .inscription {
+        width: 600px;
+    }
+    #email {
+        padding: 20px 15px;
+        width: 400px;
+    }
+    #pseudo {
+        padding: 20px 15px;
+        width: 400px;
+    }
+    .password-container {
+        width: 400px;
+    }
+    .password2-container {
+        width: 400px;
+    }
+    hr{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .inscription {
+        width: 500px;
+    }
+    #email::placeholder, #pseudo::placeholder, #password::placeholder, #password2::placeholder {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .inscription {
+        width: 400px;
+    }
+    #email {
+        padding: 20px 15px;
+        width: 300px;
+    }
+    #pseudo {
+        padding: 20px 15px;
+        width: 300px;
+    }
+    .password-container {
+        width: 300px;
+    }
+    .password2-container {
+        width: 300px;
+    }  
+    hr{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .inscription {
+        width: 300px;
+        border-radius: 40px;
+    }
+    #email {
+        width: 250px;
+    }
+    #pseudo {
+        padding: 20px 15px;
+        width: 250px;
+    }
+    .password-container {
+        width: 250px;
+    }
+    .password2-container {
+        width: 250px;
+    }
+    .pass2-container label{
+        width: 200px;
+    }
+    #connexion-btn{
+        width: 200px;
+        font-size: 18px;
+    }
+    hr{
+        width: 200px;
+    }
+    .connexion{
+        font-size: 18px;
+    }
+}

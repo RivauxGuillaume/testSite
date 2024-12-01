@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.connexion{
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+    flex-direction: column;
+    background-color: #CDCDCD;
+    filter: drop-shadow(0px 40px 50px rgba(0, 0, 0, 0.192));
+    width: 800px;
+    height: 700px;
+    border-radius: 50px;
+}
+
+.connexion h1{
+    margin: 40px 0 0 0;
+    font-size: 32px;
+    font-family: "inter", sans-serif;
+    font-weight: 800;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mail-container{
+    margin: 40px 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user{
+    width: 30px;
+    height: 30px;
+}
+
+.pass-container{
+    margin: 40px 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lock{
+    width: 30px;
+    height: 30px;
+}
+
+
+label{
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+}
+
+#email {
+    padding: 20px 15px;
+    width: 580px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#email::placeholder {
+    color: #777777;
+    font-weight: 400;
+}
+
+#email:focus {
+    outline: none;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.11));
+}
+
+.password-container {
+    position: relative;
+    width: 580px;
+    display: flex;
+    align-items: center;
+}
+
+#password {
+    padding: 20px 15px;
+    padding-right: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#password::placeholder {
+    color: #777777;
+    font-weight: 400;
+}
+
+#password:focus {
+    outline: none;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.11));
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toggle-password.cross {
+    transform: rotate(180deg);
+}
+
+.oublie{
+    text-align: right;
+    margin: 5px 0;
+    font-size: 16px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    color: #0084FF;
+}
+
+#connexion-btn{
+    margin: 40px 0;
+    width: 250px;
+    align-self: center;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 0;
+    font-size: 24px;
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#connexion-btn:hover{
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.103));
+}
+
+#connexion-btn:focus{
+    outline: none;
+    background-color: #CDCDCD;
+    color: #fff;
+}
+
+hr{
+    width: 580px;
+    border: 1px solid #8a8a8a;
+    margin: 10px 0;
+}
+
+.inscription{
+    margin: 40px 0;
+    text-decoration: none;
+    color: #555;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.inscription:hover{
+    color: #000;
+}
+
+
+
+
+@media screen and (max-width: 925px) {
+    .connexion {
+        width: 600px;
+    }
+    #email {
+        padding: 20px 15px;
+        width: 400px;
+    }
+    .password-container {
+        width: 400px;
+    }    
+    hr{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #email::placeholder, #password::placeholder{
+        font-size: 16px;
+    }
+    .connexion {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .connexion {
+        width: 400px;
+    }
+    #email {
+        padding: 20px 15px;
+        width: 300px;
+    }
+    .password-container {
+        width: 300px;
+    }    
+    hr{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .connexion {
+        width: 300px;
+        border-radius: 40px;
+    }
+    #email {
+        padding: 20px 15px;
+        width: 250px;
+    }
+    .password-container {
+        width: 250px;
+    }
+    .oublie{
+        text-align: right;
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    #connexion-btn{
+        width: 200px;
+        font-size: 18px;
+    }
+    hr{
+        width: 200px;
+    }
+    .inscription{
+        font-size: 18px;
+    }
+}

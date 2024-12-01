@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.postEtMenu{
+    display: flex;
+}
+
+.posts{
+    margin-left: 165px;
+}
+
+.posts h1{
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1420px){
+    .posts{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1340px){
+    .posts{
+        margin-left: 50px;
+    }
+}
+
+
+@media screen and (max-width: 1290px){
+    .cadreMenu{
+        display: none !important;
+    }
+    .posts{
+        margin: 50px auto;
+    }
+}

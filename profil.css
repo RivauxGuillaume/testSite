@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #BDBDBD;
+    outline: 10px #fff;
+    border-radius: 50px;
+}
+
+/* *{
+    border: 1px solid black;
+} */
+
+
+/* ----------------------------------------------- MENU + PROFIL */
+
+.menuPlusProfil{
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* ----------------------------------------------- PROFILE */
+
+.bgProfil{
+    width: 1100px;
+    height: 950px;
+    border-radius: 40px;
+    background: #CDCDCD;
+    box-shadow: 0px 11px 111.3px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profil{
+    margin: 50px 0 0 50px;
+    align-items: center;
+    display: flex;
+    gap: 200px;
+}
+
+.pfpPsd{
+    display: flex;
+    gap: 30px;
+}
+
+.profil img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    border-radius: 356px;
+    box-shadow: 0px 6px 18.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+#pseudo{
+    margin: 0;
+    color: #000;
+    font-family: "inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#bio{
+    margin: 10px 0 0 0;
+    color: #414141;
+    font-family: "inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nbrFollow{
+    display: flex;
+    gap: 20px;
+}
+
+#followers, #following{
+    margin: 15px 0 0 0;
+    color: #000;
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#followers span, #following span{
+    color: #8C8C8C;
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#follow{
+    width: 182px;
+    height: 38px;
+    border-radius: 40px;
+    background: #FFF;
+    cursor: pointer;
+    border: none;
+    color: #000;
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 0px 4px 16.7px 0px rgba(0, 0, 0, 0.10);
+}
+
+#follow:hover{
+    box-shadow: 0px 4px 16.7px 0px rgba(0, 0, 0, 0.253);
+}
+
+#follow:active{
+    color: #fff;
+    background-color: #888888;
+}
+
+/* ----------------------------------------------- POSTS */
+
+.posts{
+    margin: 0 auto;
+    width: 1000px;
+    height: 700px;
+    border-radius: 40px;
+    background: #FFF;
+}
+
+.btnPosts{
+    margin: 25px 0 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#btnPostPar{
+    width: 260px;
+    height: 40px;
+    border-radius: 40px;
+    background: #CDCDCD;
+    box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #000;
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#btnPostSur{
+    width: 300px;
+    height: 40px;
+    border-radius: 40px;
+    background: #E0E0E0;
+    border: none;
+    color: #000;
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#btnPostPar:hover{
+    background: #BDBDBD;
+}
+
+#btnPostSur:hover{
+    background: #BDBDBD;
+}
+
+
+
+.postspar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
